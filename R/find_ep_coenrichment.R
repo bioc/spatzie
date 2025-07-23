@@ -104,7 +104,7 @@
 #' @author Konstantin Krismer
 #' @importFrom GenomicRanges GRanges
 #' @importFrom IRanges IRanges
-#' @importFrom GenomeInfoDb Seqinfo
+#' @importFrom Seqinfo Seqinfo
 #' @importFrom GenomicRanges trim
 #' @importFrom BiocGenerics unique
 #' @importFrom GenomicInteractions GenomicInteractions
@@ -141,12 +141,12 @@ find_ep_coenrichment <- function(int_raw_data,
       seqnames = int_raw_data[, 1],
       ranges = IRanges::IRanges(start = int_raw_data[, 2],
                                 end = int_raw_data[, 3]),
-      seqinfo = GenomeInfoDb::Seqinfo(genome = genome_id))
+      seqinfo = Seqinfo::Seqinfo(genome = genome_id))
     right_anchor <- GenomicRanges::GRanges(
       seqnames = int_raw_data[, 4],
       ranges = IRanges::IRanges(start = int_raw_data[, 5],
                                 end = int_raw_data[, 6]),
-      seqinfo = GenomeInfoDb::Seqinfo(genome = genome_id))
+      seqinfo = Seqinfo::Seqinfo(genome = genome_id))
 
     # trims out-of-bound ranges located on non-circular sequences
     left_anchor <- GenomicRanges::trim(left_anchor)

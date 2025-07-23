@@ -2,7 +2,7 @@ Type: Package
 Package: spatzie
 Title: Identification of enriched motif pairs from chromatin interaction
     data
-Version: 1.15.0
+Version: 1.15.1
 Authors@R: 
     c(person(given = "Jennifer",
              family = "Hammelman",
@@ -34,7 +34,7 @@ Depends:
 Imports:
     BiocGenerics,
     BSgenome,
-    GenomeInfoDb,
+    Seqinfo,
     GenomicFeatures,
     GenomicInteractions,
     GenomicRanges,
