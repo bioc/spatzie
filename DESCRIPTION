@@ -2,7 +2,7 @@ Type: Package
 Package: spatzie
 Title: Identification of enriched motif pairs from chromatin interaction
     data
-Version: 1.17.0
+Version: 1.17.1
 Authors@R: 
     c(person(given = "Jennifer",
              family = "Hammelman",
@@ -66,3 +66,4 @@ biocViews: DNA3DStructure, GeneRegulation, PeakDetection, Epigenetics,
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3
+PackageStatus: Deprecated
